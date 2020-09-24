@@ -24,7 +24,7 @@ stages:
         command: buildAndPush
         repository: captureorder
         dockerfile: '**/Dockerfile'
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: myContainerRegistryConnection
         tags: $(tag)
 
     - task: PublishPipelineArtifact@0
